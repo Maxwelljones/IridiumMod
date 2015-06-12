@@ -22,14 +22,19 @@ public class IridiumMod {
 
 	public static final Block iridiumOre = new BlockOre().setStepSound(Block.soundTypePiston).setBlockName(Reference.MOD_ID + ".oreIridium").setBlockTextureName(Reference.MOD_ID + ":iridium_ore");
 	public static final Item iridiumIngot = new Item().setUnlocalizedName(Reference.MOD_ID + ".ingotIridium").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(Reference.MOD_ID + ":iridium_ingot");
-
+	public static final Block titaniumOre = new BlockOre().setStepSound(Block.soundTypePiston).setBlockName(Reference.MOD_ID + ".oreIridium").setBlockTextureName(Reference.MOD_ID + ":iridium_ore");
+	public static final Item titaniumIngot = new Item().setUnlocalizedName(Reference.MOD_ID + ".ingotIridium").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(Reference.MOD_ID + ":iridium_ingot");
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		GameRegistry.registerBlock(iridiumOre, "iridiumOre");
 		OreDictionary.registerOre("oreIridium", iridiumOre);
+		GameRegistry.registerBlock(titaniumOre, "titaniumOre");
+		OreDictionary.registerOre("oreTitanium", titaniumOre);
 
 		GameRegistry.registerItem(iridiumIngot, "iridiumIngot");
 		OreDictionary.registerOre("ingotIridium", iridiumIngot);
+		GameRegistry.registerItem(titaniumIngot, "titaniumIngot");
+		OreDictionary.registerOre("ingotTitanium", titaniumIngot);
 
 		ConfigHandler.INSTANCE.preInit(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(ConfigHandler.INSTANCE);
