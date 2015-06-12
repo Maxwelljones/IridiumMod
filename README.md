@@ -1,6 +1,7 @@
-Titanium Mod
+Iridium Mod
 ==========
-Forked from https://github.com/Lanse505/IridiumMod -- all the credits goes there as I dont understand much about coding :P
+Forked from https://github.com/Lanse505/IridiumMod -- all the credits goes there as I dont understand much about coding :P Trying to include Titanium in this mod!
+
 
 This Mod is Protected under the I Couldn't Care Less License and I give All rights to whoever wants to Download and Help with the development of the mod.
 
