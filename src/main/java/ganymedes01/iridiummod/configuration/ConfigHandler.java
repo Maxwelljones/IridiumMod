@@ -28,6 +28,10 @@ public class ConfigHandler {
 		IridiumMod.iridiumOre.setHarvestLevel("pickaxe", configFile.get(Configuration.CATEGORY_GENERAL, "mining_level", 3).getInt(3));
 		IridiumMod.iridiumOre.setHardness((float) configFile.get(Configuration.CATEGORY_GENERAL, "hardness", 3.0F).getDouble(3.0F));
 		IridiumMod.iridiumOre.setResistance((float) configFile.get(Configuration.CATEGORY_GENERAL, "blast_resistance", 5.0F).getDouble(5.0F));
+		IridiumMod.titaniumOre.setHarvestLevel("pickaxe", configFile.get(Configuration.CATEGORY_GENERAL, "mining_level", 5).getInt(5));
+		IridiumMod.titaniumOre.setHardness((float) configFile.get(Configuration.CATEGORY_GENERAL, "hardness", 3.0F).getDouble(3.0F));
+		IridiumMod.titaniumOre.setResistance((float) configFile.get(Configuration.CATEGORY_GENERAL, "blast_resistance", 5.0F).getDouble(5.0F));
+
 
 		if (configFile.hasChanged())
 			configFile.save();
